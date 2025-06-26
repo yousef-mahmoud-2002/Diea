@@ -30,7 +30,6 @@ class Diea extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           useMaterial3: false,
-          fontFamily: 'Muli',
           primaryColorLight: Colors.black,
           scaffoldBackgroundColor: Colors.white,
           primarySwatch: Colors.deepOrange,
