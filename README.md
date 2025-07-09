@@ -1,16 +1,31 @@
-# diea
+# 🏪 Al-Diyaa Sales App
 
-A new Flutter project.
+This mobile application is built for **sales representatives of the الضياء building materials store**.  
+It is designed to streamline the sales process by enabling reps to efficiently **present products**, **record orders**, and **communicate directly with the warehouse**.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## ✨ Features
 
-A few resources to get you started if this is your first Flutter project:
+- 🔍 Browse and filter product catalog
+- 📝 Record customer needs and orders
+- 📤 Send orders instantly to the warehouse for preparation
+- 📦 Product details with images and specs
+- 🧾 View and track submitted orders
+- 👤 Clean and simple user interface optimized for salesmen
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📸 Screenshots
+
+<p align="center">
+  <img src="assets/screenshots/home.png" width="40%" />
+  <img src="assets/screenshots/product_details.png" width="40%" />
+  <img src="assets/screenshots/order_form.png" width="40%" />
+</p>
+
+---
+
+## 🔗 Download
+
+You can download the latest release from the [Releases section](https://github.com/yousef-mahmoud-2002/news_stream/releases/tag/v1.1.0)

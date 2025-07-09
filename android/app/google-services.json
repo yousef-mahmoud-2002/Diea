@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "245866277724",
+    "project_id": "wathpa-597c9",
+    "storage_bucket": "wathpa-597c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245866277724:android:612d05ffdf52fc97d56f99",
+        "android_client_info": {
+          "package_name": "com.example.store"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgBnv9ZFFE2YFyp7_CXc_Idms1OYF1A8Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

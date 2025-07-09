@@ -1,3 +1,4 @@
+import 'package:diea/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:diea/models/product_model.dart';
 import 'package:diea/views/product_view.dart';
@@ -27,7 +28,7 @@ class Product extends StatelessWidget {
       },
       child: Card(
         elevation: 3.0,
-        shadowColor: Colors.blueGrey,
+        shadowColor: kPrimaryColor,
         margin: const EdgeInsets.all(2.0),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
         child: Column(

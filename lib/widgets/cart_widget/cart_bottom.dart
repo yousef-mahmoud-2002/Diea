@@ -32,7 +32,9 @@ class CartBottom extends StatelessWidget {
                 width: 60.0,
                 child: Center(
                   child: Text(
-                    '${BlocProvider.of<AddProductsCubit>(context).total}',
+                    BlocProvider.of<AddProductsCubit>(context)
+                        .total
+                        .toStringAsFixed(2),
                     style: const TextStyle(
                       fontSize: 16.0,
                       fontWeight: FontWeight.bold,

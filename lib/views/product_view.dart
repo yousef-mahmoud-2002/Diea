@@ -24,7 +24,7 @@ class ProductView extends StatelessWidget {
               height: 250,
               decoration: BoxDecoration(
                 color: kPrimaryColor,
-                borderRadius: BorderRadius.circular(16.0),
+                borderRadius: BorderRadius.circular(16),
               ),
             ),
           ],
@@ -32,31 +32,35 @@ class ProductView extends StatelessWidget {
         Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Container(
-              padding: const EdgeInsets.all(2),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(16.0),
-              ),
-              width: double.infinity,
-              child: GestureDetector(
-                onTap: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) {
-                      return ZoomProductPicture(
-                        image: productModel.image,
-                      );
-                    },
-                  ),
+            Flexible(
+              child: Container(
+                padding: const EdgeInsets.all(4),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(16),
                 ),
-                child: ProductPicture(
-                  image: productModel.image,
-                  radius: 16.0,
+                width: double.infinity,
+                child: GestureDetector(
+                  onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return ZoomProductPicture(
+                          image: productModel.image,
+                        );
+                      },
+                    ),
+                  ),
+                  child: IntrinsicHeight(
+                    child: ProductPicture(
+                      image: productModel.image,
+                      radius: 16,
+                    ),
+                  ),
                 ),
               ),
             ),
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0),
+              padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.end,

@@ -11,8 +11,6 @@ class ZoomProductPicture extends StatelessWidget {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        // leadingWidth: 40,
-
         title: const Text('back to product'),
         backgroundColor: Colors.black,
         toolbarHeight: 40,

@@ -25,9 +25,7 @@ class HomeView extends StatelessWidget {
           child: Divider(height: 1, color: kPrimaryColor, thickness: 0.7),
         ),
       ),
-      body:
-          //  MyHomePage()
-          const SingleChildScrollView(
+      body: const SingleChildScrollView(
         physics: BouncingScrollPhysics(),
         child: Column(
           children: [
@@ -42,9 +40,9 @@ class HomeView extends StatelessWidget {
               ),
             ),
             CategoriesView(),
-            Divider(height: 0, color: kPrimaryColor, thickness: 0.5),
+            Divider(height: 0, color: kSecondaryColor, thickness: 1),
             Popular(),
-            Divider(height: 0, color: kPrimaryColor),
+            Divider(height: 0, color: kSecondaryColor, thickness: 1),
             GetGeneralCategoryView(),
             SizedBox(height: 8),
           ],

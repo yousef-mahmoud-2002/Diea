@@ -49,7 +49,7 @@ class AddProductButton extends StatelessWidget {
                       : BlocProvider.of<AddProductsCubit>(context)
                           .price_
                           .toDouble()),
-              number:
+              quantity:
                   BlocProvider.of<AddProductsCubit>(context).number.toString(),
               price: BlocProvider.of<AddProductsCubit>(context).price_ == 0
                   ? productModel.price.toString()
@@ -69,7 +69,6 @@ class AddProductButton extends StatelessWidget {
             animationDuration: const Duration(milliseconds: 600),
             reverseAnimationDuration: const Duration(milliseconds: 400),
             const CustomSnackBar.success(
-              // backgroundColor: Colors.black54,
               backgroundColor: kPrimaryColor,
               icon: Icon(Icons.done, size: 0),
               message: 'تم الإضافة إلى الفاتورة بنجاح',

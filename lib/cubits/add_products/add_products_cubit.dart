@@ -14,6 +14,9 @@ class AddProductsCubit extends Cubit<AddProductsState> {
   String selected = 'not';
   num price_ = 0;
 
+  String customerName = '';
+  String areaName = '';
+
   addProducts({required CartItemModel cartItemModel}) {
     total += cartItemModel.totalPrice;
     cartItems.add(cartItemModel);

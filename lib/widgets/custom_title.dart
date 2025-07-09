@@ -19,7 +19,7 @@ class CustomTitle extends StatelessWidget {
         ),
         SizedBox(width: 6.0),
         Text(
-          ktitle,
+          'الضياء',
           style: TextStyle(
             fontSize: 22.0,
             color: kPrimaryColor,

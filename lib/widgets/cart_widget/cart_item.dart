@@ -27,7 +27,7 @@ class CartItem extends StatelessWidget {
                   Expanded(child: ItemFieldName(label: itemModel.price)),
                   const VerticalDivider(
                       width: 0, color: kPrimaryColor, thickness: 2),
-                  Expanded(child: ItemFieldName(label: itemModel.number)),
+                  Expanded(child: ItemFieldName(label: itemModel.quantity)),
                 ],
               ),
             ),

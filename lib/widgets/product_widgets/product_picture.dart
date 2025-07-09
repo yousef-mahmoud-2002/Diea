@@ -1,6 +1,7 @@
 import 'package:diea/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:shimmer/shimmer.dart';
 
 class ProductPicture extends StatelessWidget {
   const ProductPicture({
@@ -11,6 +12,7 @@ class ProductPicture extends StatelessWidget {
 
   final String image;
   final double radius;
+
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
@@ -18,12 +20,15 @@ class ProductPicture extends StatelessWidget {
       child: CachedNetworkImage(
         fit: BoxFit.cover,
         imageUrl: image,
-        placeholder: (context, url) => const Center(
-          child: CircularProgressIndicator(
-            strokeWidth: 0.7,
+        placeholder: (context, url) => Shimmer.fromColors(
+          baseColor: kBackgroundColor,
+          highlightColor: kPrimaryColor,
+          child: Container(
             color: kBackgroundColor,
+            height: 150,
           ),
         ),
+        errorWidget: (context, url, error) => const Icon(Icons.error),
       ),
     );
   }

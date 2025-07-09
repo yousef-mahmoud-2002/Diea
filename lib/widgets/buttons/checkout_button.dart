@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:diea/constants.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class CheckoutButton extends StatelessWidget {
-  const CheckoutButton({super.key});
+  const CheckoutButton({super.key, this.onPressed});
+
+  final void Function()? onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -11,9 +12,7 @@ class CheckoutButton extends StatelessWidget {
       splashColor: kPrimaryColor,
       height: 48,
       color: kBackgroundColor,
-      onPressed: () {
-        launchUrl(Uri.parse("whatsapp://send?phone=962782534529"));
-      },
+      onPressed: onPressed,
       child: const Text(
         'Checkout',
         style: TextStyle(

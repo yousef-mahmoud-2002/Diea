@@ -45,10 +45,10 @@ class CartHeader extends StatelessWidget {
                           ' التاريخ : ${DateFormat('dd - MM - yyyy').format(DateTime.now())}'),
                   HeaderDetails(
                       label:
-                          ' اليوم : ${DateFormat('EEEE').format(DateTime.now())}'),
+                          ' اليوم : ${DateFormat('EEEE', 'ar').format(DateTime.now())}'),
                   HeaderDetails(
                       label:
-                          ' الساعة : ${DateFormat('mm : h  a').format(DateTime.now())}'),
+                          ' الساعة : ${DateFormat('mm : h  a', 'ar').format(DateTime.now())}'),
                 ],
               ),
             ],
